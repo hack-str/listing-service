@@ -51,7 +51,9 @@ public class ListingController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public ResponseEntity<Listing> deleteListing(@RequestBody Listing listing){
+	public ResponseEntity<Listing> deleteListing(@PathVariable("id")int id){
+		Listing listing = new Listing();
+		listing.setId(id);
 		return new ResponseEntity<Listing>(listing, HttpStatus.OK);
 	}
 }
