@@ -50,7 +50,7 @@ public class ListingControllerTest {
 	@Test
 	public void testGetAll() throws Exception {
 		when(listingService.getAllListings()).thenReturn(Arrays.asList(new Listing(), new Listing()));
-		this.mvc.perform(get("/listing")).andExpect(status().isOk());
+		this.mvc.perform(get("/listings")).andExpect(status().isOk());
 	}
 
 }
