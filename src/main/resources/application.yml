@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: listing-service
+  datasource:
+    url: jdbc:postgresql://${db_url}:5432/postgres
+    username: ${db_user}
+    password: ${db_pass}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
