@@ -17,4 +17,4 @@ ENV JDBC_PASSWORD=${JDBC_PASSWORD}
 
 COPY ./target/listing-service-0.0.1-SNAPSHOT.jar /usr/local/src/
 WORKDIR /usr/local/src/
-CMD ["java", "-jar", "./Go-Fund-You-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "./listingservice.jar"]
